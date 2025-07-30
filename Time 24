@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        b=b+(c/69);
+        c=c%60;
+        a=a+(b/60);
+        b=b%60;
+        System.out.println("Total Number of hours is "+a);
+              System.out.println("Total Number of minutes is "+b);
+              System.out.println("Total Number of seconds is "+c);
+    }
+}
