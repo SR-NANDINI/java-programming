@@ -8,11 +8,11 @@ public class Solution {
 
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-        Scanner sc=new Scanner(System.in);
+         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
         int b=sc.nextInt();
         int c=sc.nextInt();
-        b=b+(c/69);
+        b=b+(c/60);
         c=c%60;
         a=a+(b/60);
         b=b%60;
