@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class VowelOrConsonant {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String input = sc.next();
+
+        char ch = input.charAt(0);
+        String result = (input.length() == 1 && Character.isLetter(ch)) ?
+                        ("AEIOUaeiou".indexOf(ch) != -1 ?
+                         "The Character " + ch + " is Vowel" :
+                         "The Character " + ch + " is Consonant") :
+                        "Invalid Input";
+
+        System.out.println(result);
+    }
+}
