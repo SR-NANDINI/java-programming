@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner x=new Scanner(System.in);
+        int n=x.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=x.nextInt();}
+        int k=x.nextInt();
+        int temp;
+        
+        for(int i=0;i<n-1;i++){
+           for(int j=i+1;j<n;j++){
+               if(arr[i]>arr[j]){
+                  temp=arr[i];
+                  arr[i]=arr[j];
+                  arr[j]=temp;}}}
+       System.out.print("The elements are in the order:");
+       for(int i=0;i<n;i++){
+           System.out.print(" "+arr[i]);}
+       System.out.println();
+       System.out.print("The Kth value is "+k+" and Largest elements are");
+       for(int i=n-1;i>=n-k;i--){
+           System.out.print(" "+arr[i]);
+           }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
