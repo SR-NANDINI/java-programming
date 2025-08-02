@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner x=new Scanner(System.in);
+    int n=x.nextInt();
+    int arr[]=new int[n];
+    for(int i=0;i<n;i++){
+        arr[i]=x.nextInt();}
+    float pc=0;
+    float nc=0;
+    for(int i=0;i<n;i++){
+        if(arr[i]>0){
+           pc++;}
+         else{
+           nc++;}}
+    System.out.printf("Count of Positive Integer is %.2f\n",pc);
+    System.out.printf("Count of Negative Integer is %.2f",nc);
+    
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
