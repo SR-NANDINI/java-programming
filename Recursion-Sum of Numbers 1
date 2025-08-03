@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner x=new Scanner(System.in);
+    int n=x.nextInt();
+    if(n<1 || n>50){
+       System.out.println("Enter a Valid Input!!!!!!!!!!!!!!!!!!");}
+    else{
+       Solution sn=new Solution();
+       System.out.print("The sum of numbers from 1 to " +n+" : ");
+       int result=sn.Sum(n);
+       System.out.printf("%04d",result);}
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+    int Sum(int n){
+         if(n==0){
+            return 0;}
+         else{
+            return n+Sum(n-1);
+            }}
+}
