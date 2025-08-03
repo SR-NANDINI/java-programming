@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner x=new Scanner(System.in);
+    String a=x.nextLine().toLowerCase();
+    int c=0;
+    for(int i=0;i<a.length();i++){
+        if(a.charAt(i)=='a' || a.charAt(i)=='e' || a.charAt(i)=='i' || a.charAt(i)=='o' || a.charAt(i)=='u' ){
+           c++;}}
+    System.out.println(c);
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
