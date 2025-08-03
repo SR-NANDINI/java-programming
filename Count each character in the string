@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner x=new Scanner(System.in);
+    String a=x.nextLine().toLowerCase();
+    boolean[] v=new boolean[a.length()];
+    for(int i=0;i<a.length();i++){
+        if(v[i]||a.charAt(i)==' '){
+           continue;}
+        int c=1;
+        for(int j=i+1;j<a.length();j++){
+            if(a.charAt(i)==a.charAt(j)){
+               c++;
+               v[j]=true;}
+             }
+     System.out.println(a.charAt(i)+"   "+c);}
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
